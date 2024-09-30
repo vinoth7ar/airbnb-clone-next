@@ -44,3 +44,14 @@ with Tailwind, ESLINT, APP Router, - YES
 src directory --- NO
 
 1. Step Up Navbar component
+
+2. Created couple of reusable components
+    - Modal
+    - Button 
+
+3. Install Zustand for state management
+    -   zustand 
+    -   axios
+    -   react-hook-form  // to handle form validation and submit
+    -   react-toast // to handle errors
+    -   react-hot-toast
