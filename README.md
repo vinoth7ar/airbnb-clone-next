@@ -55,3 +55,32 @@ src directory --- NO
     -   react-hook-form  // to handle form validation and submit
     -   react-toast // to handle errors
     -   react-hot-toast
+
+
+4. Install prisma
+     npm i -D prisma ----> npx prisma init
+     - Go to schema.prisma replace posgre with mongodb and its URL
+     - go to mondo db atlas login - use oauth with vinothboss.r
+
+     Steps: 
+     1. Create new DB here -- https://cloud.mongodb.com/v2/66032d346573cb0443ecacaa#/clusters/starterTemplates?from=ctaClusterHeader -- make sure add /test at the test which refers to the db name
+     2. creds = vinoth/vinoth
+     3. create Model in the schema.prsima 
+     4. do npm install next-auth @prisma/client @next-auth/prisma-adapter
+     5. npm install bcrypt, npm install -D @types/bcrypt
+     6. create prisma util and link the code
+     
+5. Define Routes and APIs inside api route.ts
+
+
+
+
+Issue faced: 
+1. Unable to invoke the POST call for user creation - first prisma call
+    Solution: Worngly imported the Prismaclient from some lib instead of 
+            import { PrismaClient } from "@prisma/client"
+    "Error message I got "prisma/client did not initialize yet. Please run /"prisma generate/" and try to import it again.",
+
+2. 
+
+
